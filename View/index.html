@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Smart Home Control Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Smart Home</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="index.html">Главная</a></li>
+                        <li><a href="graphs.html">Графики</a></li>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-bell-o" id="btn-notification" aria-hidden="true"></i></span> <span id="notifications-amount">(1)</span></a>
+                            <ul class="dropdown-menu notifications">
+                                <li><div class="container centered"><h3>Последние 3 уведомления</h3><hr></div></li>
+                                <li>
+                                    <div class="container centered">
+                                        <h4>Инфо</h4>
+                                        <p>Всё хорошо!</p>
+                                        <hr>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Content-->
+        
+        <div class="container">
+            <div class="row centered">
+                <div class="col-xs-6 col-sm-6 indicator">
+                    <p class="centered"><span id="temperature-value">27.2</span> °C</p>
+                    <h3 class="centered">Температура</h3>
+                </div>
+                <div class="col-xs-6 col-sm-6 indicator">
+                    <p class="centered"><span id="humidity-value">40</span> %</p>
+                    <h3 class="centered">Влажность</h3>
+                </div>
+                <span class="col-xs-12 col-lg-12 line"></span>
+                <div class="col-xs-6 col-sm-3 switcher">
+                    <button type="button" class="switch-button" id="room-switcher1" onclick="">Выключено</button>
+                    <h3 class="centered">Свет: стол</h3>
+                </div>
+                <div class="col-xs-6 col-sm-3 switcher">
+                    <button type="button" class="switch-button" id="room-switcher2" onclick="">Выключено</button>
+                    <h3 class="centered">Свет: кровать</h3>
+                </div>
+                <div class="col-xs-6 col-sm-3 switcher">
+                    <button type="button" class="switch-button" id="room-switcher3" onclick="">Выключено</button>
+                    <h3 class="centered">Switcher 3</h3>
+                </div>
+                <div class="col-xs-6 col-sm-3 switcher">
+                    <button type="button" class="switch-button" id="room-switcher4" onclick="">Выключено</button>
+                    <h3 class="centered">Switcher 4</h3>
+                </div>
+            </div>
+        </div>
+
+        <!--End of content-->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/script.js"></script>
+        <script>afterLoad();</script>
+    </body>
+</html>

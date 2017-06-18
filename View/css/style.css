@@ -1,0 +1,105 @@
+body {
+    font-size: 16px;
+    text-align: center;
+    margin: 0px;
+    background-repeat: repeat;
+    background-image: url(../image/repeating-art-paper-background.jpg);
+    font-weight: 300;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    -moz-font-smoothing: antialiased;
+    -moz-overflow-scrolling: touch;
+    -o-font-smoothing: antialiased;
+    -o-overflow-scrolling: touch;
+    -ms-font-smoothing: antialiased;
+    -ms-overflow-scrolling: touch;
+
+    color: #555;
+    margin-top: 70px;
+}
+
+p {
+    line-height: 28px;
+}
+
+a {
+    color: #f85c37;
+}
+
+a:hower, a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+.centered {
+    text-align: center;
+}
+
+.navbar {
+
+}
+
+.navbar-inverse {
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.indicator {
+    padding: 10px;
+}
+
+.indicator p {
+    font-size: 25px;
+}
+
+.switcher {
+    padding: 10px;
+}
+
+
+.switch-button {
+    font-size: 25px;
+    border: none;
+    height: 150px;
+    width: 100%;
+}
+
+.switch-button:hover {
+    background-color: coral;
+}
+
+
+.line {
+    margin-bottom: 10px;
+    color: black;
+    display: block;
+    width: 100%; 
+    color: black; 
+    height: 1px; 
+    background-color: black;
+}
+
+.graph {
+    /*padding: 10px;*/
+}
+
+.graph > img {
+    width: 100%;
+}
+
+.fa {
+    font-size: 18px;
+    color: aliceblue
+    /*color: greenyellow;*/
+}
+
+.notifications {
+    /*color: white;*/
+    background: white;
+}
