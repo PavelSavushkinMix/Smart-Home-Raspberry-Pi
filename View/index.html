@@ -23,7 +23,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">Главная</a></li>
                         <li><a href="graphs.html">Графики</a></li>
-                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span><i class="fa fa-bell-o" id="btn-notification" aria-hidden="true"></i></span> <span id="notifications-amount">(1)</span></a>
+                        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="notificationsChecked()"><span><i class="fa fa-bell-o" id="btn-notification" aria-hidden="true"></i></span> <span id="notifications-amount">(1)</span></a>
                             <ul class="dropdown-menu notifications">
                                 <li><div class="container centered"><h3>Последние 3 уведомления</h3><hr></div></li>
                                 <li>
@@ -54,19 +54,19 @@
                 </div>
                 <span class="col-xs-12 col-lg-12 line"></span>
                 <div class="col-xs-6 col-sm-3 switcher">
-                    <button type="button" class="switch-button" id="room-switcher1" onclick="">Выключено</button>
+                    <button type="button" class="switch-button" id="room-switcher1" onclick="switchPressed(1)">Включено</button>
                     <h3 class="centered">Свет: стол</h3>
                 </div>
                 <div class="col-xs-6 col-sm-3 switcher">
-                    <button type="button" class="switch-button" id="room-switcher2" onclick="">Выключено</button>
+                    <button type="button" class="switch-button" id="room-switcher2" onclick="switchPressed(2)">Выключено</button>
                     <h3 class="centered">Свет: кровать</h3>
                 </div>
                 <div class="col-xs-6 col-sm-3 switcher">
-                    <button type="button" class="switch-button" id="room-switcher3" onclick="">Выключено</button>
+                    <button type="button" class="switch-button" id="room-switcher3" onclick="switchPressed(3)">Выключено</button>
                     <h3 class="centered">Switcher 3</h3>
                 </div>
                 <div class="col-xs-6 col-sm-3 switcher">
-                    <button type="button" class="switch-button" id="room-switcher4" onclick="">Выключено</button>
+                    <button type="button" class="switch-button" id="room-switcher4" onclick="switchPressed(4)">Выключено</button>
                     <h3 class="centered">Switcher 4</h3>
                 </div>
             </div>
